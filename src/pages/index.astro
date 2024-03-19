@@ -8,16 +8,21 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 
 const last_posts = posts.slice(0, 3);
 
+import proj1 from '~/assets/images/project/proj1.png'
+import proj2 from '~/assets/images/project/proj2.png'
+import proj3 from '~/assets/images/project/proj3.png'
+import proj4 from '~/assets/images/project/proj4.png'
+
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hello there 👋</div>
     <div class="text-5xl font-bold">I'm Sanjay Goswami</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer </div>
     <div class="py-2">
       <text class="text-lg">
-        I'm a Software Engineer from India. Over the last 8 years I have build or oversaw the developement of around 50 
+        Over the last 8 years I have build or oversaw the developement of around 50 
         enterprice level Software Projects . for mobile, web and IOT platforms using technologies like html, css,
         python, javascript, swift, kotlin, mysql, GCP, AWS. etc.
       </text>
@@ -36,7 +41,7 @@ const last_posts = posts.slice(0, 3);
 
   <HorizontalCard
     title="Airmaps - Google Maps Records Visualization"
-    img="/proj1.png"
+    img={proj1}
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="https://demo.sanjaygoswami.online"
     badge="NEW"
@@ -44,7 +49,7 @@ const last_posts = posts.slice(0, 3);
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Chicane Inc. Landing Page"
-    img="/proj2.png"
+    img={proj2}
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="https://main.djb4unk314g8.amplifyapp.com/"
   />
@@ -52,7 +57,7 @@ const last_posts = posts.slice(0, 3);
 
   <HorizontalCard
     title="Itne Incorporated Business Dashboard"
-    img="/proj3.png"
+    img={proj3}
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="https://dynamic-table-xi.vercel.app/"
     badge=""
@@ -60,7 +65,7 @@ const last_posts = posts.slice(0, 3);
 
   <HorizontalCard
     title="Itne Incorporated Business Dashboard Fresh Order - Build and Buy Custom Tshirts "
-    img="/proj4.png"
+    img={proj4}
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
     badge=""
